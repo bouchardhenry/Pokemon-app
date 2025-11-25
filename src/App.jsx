@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { Routes, Route, BrowserRouter, HashRouter } from 'react-router-dom'
 import Navigation from './components/navigation/Navigation.jsx'
 import Home from './pages/home/Home.jsx'
 import PokemonDetails from './pages/pokemon-details/PokemonDetails.jsx'
@@ -12,7 +12,7 @@ import Error from './pages/error/Error.jsx'
 function App() {
 
   return (
-      <BrowserRouter>
+      <HashRouter>
         <Navigation/>
           <Routes>
             <Route path='/' element={<Home/>} />
@@ -23,7 +23,7 @@ function App() {
             <Route path='*' element={<Error />} />
           </Routes>
         <Footer/>
-      </BrowserRouter>
+      </HashRouter>
   )
 }
 
