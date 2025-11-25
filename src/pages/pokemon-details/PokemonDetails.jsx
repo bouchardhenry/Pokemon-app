@@ -27,16 +27,16 @@ const PokemonDetails = () => {
   if (loading) return <div>Loading...</div>;
   if (!pokemon) return <div>Pokemon not found</div>;
 
-  if (Number(id) > 151) {
-  return (
-  <div className={styles["error-div"]}>
-  <p>Pokemon not found</p>
-  <div className="bredcrums">
-  <Link to="/pokemons">&#x3c; Go back</Link>
-  </div>
-  </div>
-  )
-}
+  if (Number(id) > 151 || Number(id) < 1) {
+    return (
+      <div className={styles["error-div"]}>
+        <p>Pokemon not found</p>
+        <div className="bredcrums">
+          <Link to="/pokemons">&#x3c; Go back</Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -47,12 +47,27 @@ const PokemonDetails = () => {
           {pokemon.name}
         </code>
       </div>
+
       <div className={styles.wrapper}>
-        <button className={styles["next-poke"]}>
-          <Link to={`/pokemons/${Number(id) + 1}`}>
-            See next Pokémon <span style={{ fontSize: "1rem" }}>&#x203A;</span>
-          </Link>
-        </button>
+        <div className={styles["nextPrevDiv"]}>
+          {Number(id) > 1 && (
+            <button className={styles["next-poke"]}>
+              <Link to={`/pokemons/${Number(id) - 1}`}>
+                <span style={{ fontSize: "1rem" }}>&#x3c;</span>
+              </Link>
+            </button>
+          )}
+
+          {Number(id) < 151 && (
+            <button className={styles["next-poke"]}>
+            <Link to={`/pokemons/${Number(id) + 1}`}>
+              <span style={{ fontSize: "1rem" }}>&#x3e;</span>
+            </Link>
+          </button>
+          )}
+          
+        </div>
+
         <div className={styles["pokediv"]}>
           <h1>{pokemon.name}</h1>
           <div className={styles.spriteBox}>

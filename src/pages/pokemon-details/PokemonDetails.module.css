@@ -96,19 +96,29 @@
     margin: 0.2rem 0;
 }
 
+.nextPrevDiv {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
 .next-poke {
     margin-bottom: 1rem;
-    width: 20rem;
+    width: 3rem;
     background-color: lightgray;
     transition: ease-in-out 0.2s;
+    font-size: small;
+    text-align: center;
+
 }
 
 .next-poke:hover {
     transform: scale(1.05);
+    border: solid 2px #6495ED;
 }
 
 .next-poke:hover a {
-    color: gray;
+    color: #6495ED
 }
 
 .next-poke a {
