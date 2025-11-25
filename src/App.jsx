@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route, HashRouter, BrowserRouter } from 'react-router-dom'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Navigation from './components/navigation/Navigation.jsx'
 import Home from './pages/home/Home.jsx'
 import PokemonDetails from './pages/pokemon-details/PokemonDetails.jsx'
