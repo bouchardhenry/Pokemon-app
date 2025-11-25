@@ -1,0 +1,43 @@
+.pokemon-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 2vh;
+}
+
+.search-div {
+    background-image: url(../../assets/pokedex.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 45vh;
+}
+
+.pokemon-list option {
+    text-transform: capitalize;
+}
+
+.search-div select {
+    height: 2rem;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(255, 33, 33);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+.pokemon-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.galleryBtn:hover {
+    transform: scale(0.95);
+    background-color: lightgray;
+}

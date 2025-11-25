@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+a {
+  color: grey;
+}
+
+body {
+  background-color: #ffffff;
+  background-size: 20px 20px;
+  background-image:
+    linear-gradient(to right, #d0d0d0 1px, transparent 1px),
+    linear-gradient(to bottom, #d0d0d0 1px, transparent 1px);
+}
+
+.breadcrums {
+    padding: 1rem;
+    text-transform: capitalize;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.breadcrums a {
+    text-decoration: none;
+    transition: ease-in-out 0.1s;
+}
+
+.breadcrums a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
