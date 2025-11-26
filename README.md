@@ -8,7 +8,7 @@ A retro-styled Pokémon encyclopedia web application showcasing all 151 original
 
 ## 🌐 Live Demo
 
-Check out the live version of the application: <a href="https://bouchardhenry.github.io/Pokemon-app-2/">Pokedex Explorer</a>
+Check out the live version of the application: <a href="https://bouchardhenry.github.io/Pokemon-app-2/" target="_blank">Pokedex Explorer</a>
 
 ## ✨ Features
 
