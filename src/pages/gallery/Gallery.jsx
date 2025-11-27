@@ -25,7 +25,7 @@ const Gallery = () => {
         </code>
       </div>
       <div className={styles["gallery-div"]}>
-        <h1>Browse all 151 original Pokémon:</h1>
+        <h1 className={styles["gallery-title"]}>Browse all 151 original Pokémon:</h1>
         <ul>
           {pokemons.map((pokemon, index) => (
             <li key={pokemon.name} className="pokemons-list">

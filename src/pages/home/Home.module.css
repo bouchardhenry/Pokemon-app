@@ -6,7 +6,7 @@
 
 .launch-app-section img:hover {
     cursor: pointer;
-    transform: rotate(720deg) scale(1.2);
+    transform: rotate(360deg) scale(1.4);
     filter: drop-shadow(5px 5px 10px rgb(198, 137, 255));
 }
 
@@ -66,4 +66,21 @@
 
 h3 {
     margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .start-button{
+    width: 80%;
+    font-size: small;
+    line-height: 150%;
+    } 
+
+    .banner-section{
+        margin-top: 5%;
+        height: 6rem;
+    }
+
+    .poke-background{
+        width: 90vw;
+    }
 }

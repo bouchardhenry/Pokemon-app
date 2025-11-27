@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import pokeBackground from "../../assets/pokemon-background.jpg";
 import pokeMap from "../../assets/rby_kanto.webp";
 import Banner from "../../components/banner/Banner";
 import MasterballImg from "../../assets/masterball2.png";
