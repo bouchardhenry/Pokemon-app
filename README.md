@@ -6,6 +6,10 @@ A retro-styled Pokémon encyclopedia web application showcasing all 151 original
 ![React](https://img.shields.io/badge/React-18.x-61dafb)
 ![React Router](https://img.shields.io/badge/React%20Router-6.x-red)
 
+## 🌐 Live Demo
+
+Check out the live version of the application: <a href="https://bouchardhenry.github.io/Pokemon-app-2/" target="_blank">Pokedex Explorer</a>
+
 ## ✨ Features
 
 - **Complete Pokédex**: Browse all 151 original Pokémon with detailed information
